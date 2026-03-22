@@ -1,0 +1,49 @@
+:root {
+  /* Colors - Playful Dimensional Palette */
+  --d-bg-primary: #F9F8F4;
+  --d-bg-secondary: #FFFFFF;
+  --d-accent-yellow: #FFF455;
+  --d-accent-pink: #FF004D;
+  --d-accent-red: #FF0000;
+  --d-text-primary: #000000;
+  --d-border: #000000;
+  
+  /* Shadows - Hard shadows with no blur for dimensional effect */
+  --d-shadow-sm: 2px 2px 0px #000000;
+  --d-shadow-md: 3px 3px 0px #000000;
+  --d-shadow-lg: 5px 5px 0px #000000;
+  --d-shadow-dropdown: 4px 4px 0px #000000;
+  
+  /* Interactive state shadows */
+  --d-shadow-hover: 2px 2px 0px #000000;
+  --d-shadow-active: 3px 3px 0px #000000;
+  --d-shadow-none: none;
+  
+  /* Border Radius - Rounded corners for playful aesthetic */
+  --d-radius-sm: 8px;
+  --d-radius-md: 12px;
+  --d-radius-lg: 16px;
+  --d-radius-pill: 999px;
+  
+  /* Typography - Bold sans-serif for maximum legibility */
+  --d-font-family: 'Inter', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --d-font-weight-normal: 600;
+  --d-font-weight-bold: 700;
+  
+  /* Spacing - Consistent spacing scale */
+  --d-spacing-xs: 8px;
+  --d-spacing-sm: 16px;
+  --d-spacing-md: 24px;
+  --d-spacing-lg: 32px;
+  --d-spacing-xl: 48px;
+  
+  /* Border widths */
+  --d-border-width-thin: 1px;
+  --d-border-width-thick: 2px;
+  --d-border-width-extra-thick: 3px;
+  
+  /* Z-index scale */
+  --d-z-dropdown: 1000;
+  --d-z-modal: 2000;
+  --d-z-tooltip: 3000;
+}

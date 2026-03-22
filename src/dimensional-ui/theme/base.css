@@ -1,0 +1,141 @@
+/* Base styles and resets for dimensional aesthetic */
+
+/* Import tokens */
+@import './tokens.css';
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body and HTML setup */
+html {
+  font-family: var(--d-font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--d-bg-primary);
+  color: var(--d-text-primary);
+  font-weight: var(--d-font-weight-normal);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Typography base styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--d-font-weight-bold);
+  line-height: 1.2;
+}
+
+/* Button reset for custom styling */
+button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+/* Input and form element resets */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Link reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* List reset */
+ul, ol {
+  list-style: none;
+}
+
+/* Image reset */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: var(--d-border-width-thick) solid var(--d-text-primary);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --d-bg-primary: #FFFFFF;
+    --d-bg-secondary: #FFFFFF;
+    --d-text-primary: #000000;
+    --d-border: #000000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Utility classes for common dimensional patterns */
+.d-shadow-sm {
+  box-shadow: var(--d-shadow-sm);
+}
+
+.d-shadow-md {
+  box-shadow: var(--d-shadow-md);
+}
+
+.d-shadow-lg {
+  box-shadow: var(--d-shadow-lg);
+}
+
+.d-shadow-hover {
+  box-shadow: var(--d-shadow-hover);
+}
+
+.d-shadow-active {
+  box-shadow: var(--d-shadow-active);
+}
+
+.d-border-black {
+  border: var(--d-border-width-thick) solid var(--d-border);
+}
+
+.d-rounded-sm {
+  border-radius: var(--d-radius-sm);
+}
+
+.d-rounded-md {
+  border-radius: var(--d-radius-md);
+}
+
+.d-rounded-lg {
+  border-radius: var(--d-radius-lg);
+}
+
+.d-rounded-pill {
+  border-radius: var(--d-radius-pill);
+}

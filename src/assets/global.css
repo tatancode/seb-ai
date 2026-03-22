@@ -1,0 +1,158 @@
+/* Typography */
+:root {
+  --font-heading: 'Archivo Black', sans-serif;
+  --font-body: 'Inter', var(--d-font-family);
+  --section-max-width: 1100px;
+  --section-spacing: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--d-bg-primary);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Heading styles */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* Geometric background */
+.geometric-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.geometric-bg svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Section cards */
+.section-card {
+  position: relative;
+  z-index: 1;
+  background: var(--d-bg-secondary);
+  border: var(--d-border-width-extra-thick) solid var(--d-border);
+  border-radius: var(--d-radius-lg);
+  box-shadow: var(--d-shadow-lg);
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+  padding: clamp(2rem, 4vw, 4rem);
+}
+
+/* Section banner header */
+.section-banner {
+  background: var(--d-text-primary);
+  color: var(--d-bg-secondary);
+  padding: 1rem 2rem;
+  margin: -1px;
+  border-radius: var(--d-radius-lg) var(--d-radius-lg) 0 0;
+  text-align: center;
+  border: var(--d-border-width-extra-thick) solid var(--d-border);
+  margin-bottom: 0;
+}
+
+.section-banner + .section-card {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+}
+
+.section-banner h2 {
+  margin: 0;
+  color: var(--d-bg-secondary);
+}
+
+/* Section wrapper with spacing */
+.section-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  margin-bottom: var(--section-spacing);
+}
+
+/* Accent text */
+.accent-pink {
+  color: var(--d-accent-pink);
+}
+
+.accent-yellow {
+  background: var(--d-accent-yellow);
+  padding: 0 0.25em;
+}
+
+/* Bold callout */
+.callout {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--d-accent-pink);
+  line-height: 1.5;
+}
+
+/* Two-column layout */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-spacing: 48px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-card {
+    margin: 0 1rem;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .section-banner {
+    margin: 0 1rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,172 @@
+/* Shadow Utilities */
+.d-shadow-none {
+  box-shadow: none;
+}
+
+.d-shadow-sm {
+  box-shadow: var(--d-shadow-sm);
+}
+
+.d-shadow-md {
+  box-shadow: var(--d-shadow-md);
+}
+
+.d-shadow-lg {
+  box-shadow: var(--d-shadow-lg);
+}
+
+.d-shadow-dropdown {
+  box-shadow: var(--d-shadow-dropdown);
+}
+
+.d-shadow-hover {
+  box-shadow: var(--d-shadow-hover);
+}
+
+.d-shadow-active {
+  box-shadow: var(--d-shadow-active);
+}
+
+/* Interactive State Utilities */
+.d-interactive {
+  transition: box-shadow 0.15s ease-out, transform 0.15s ease-out;
+  cursor: pointer;
+}
+
+.d-interactive:hover {
+  box-shadow: var(--d-shadow-hover);
+}
+
+.d-interactive:active {
+  box-shadow: var(--d-shadow-none);
+  transform: translate(2px, 2px);
+}
+
+.d-interactive:focus-visible {
+  outline: 2px solid var(--d-accent-yellow);
+  outline-offset: 2px;
+}
+
+.d-interactive.d-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Interactive State Classes */
+.d-hovered {
+  box-shadow: var(--d-shadow-hover);
+}
+
+.d-pressed {
+  box-shadow: var(--d-shadow-none);
+  transform: translate(2px, 2px);
+}
+
+.d-focused {
+  outline: 2px solid var(--d-accent-yellow);
+  outline-offset: 2px;
+}
+
+.d-active {
+  box-shadow: var(--d-shadow-active);
+}
+
+.d-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Sticker-style Component Base */
+.d-sticker {
+  border-radius: var(--d-radius-md);
+  border: 2px solid var(--d-border);
+  box-shadow: var(--d-shadow-md);
+  transition: box-shadow 0.15s ease-out, transform 0.15s ease-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.d-sticker:hover {
+  box-shadow: var(--d-shadow-hover);
+}
+
+.d-sticker:active {
+  box-shadow: var(--d-shadow-none);
+  transform: translate(2px, 2px);
+}
+
+.d-sticker.d-pressed {
+  box-shadow: var(--d-shadow-none);
+  transform: translate(2px, 2px);
+}
+
+.d-sticker.d-active {
+  box-shadow: var(--d-shadow-active);
+}
+
+/* Button Base Styles */
+.d-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--d-spacing-sm) var(--d-spacing-md);
+  border: 2px solid var(--d-border);
+  border-radius: var(--d-radius-pill);
+  font-family: var(--d-font-family);
+  font-weight: var(--d-font-weight-bold);
+  text-decoration: none;
+  box-shadow: var(--d-shadow-md);
+  transition: box-shadow 0.15s ease-out, transform 0.15s ease-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+.d-btn:hover {
+  box-shadow: var(--d-shadow-hover);
+}
+
+.d-btn:active {
+  box-shadow: var(--d-shadow-none);
+  transform: translate(2px, 2px);
+}
+
+.d-btn:focus-visible {
+  outline: 2px solid var(--d-accent-yellow);
+  outline-offset: 2px;
+}
+
+.d-btn-primary {
+  background-color: var(--d-accent-pink);
+  color: white;
+}
+
+.d-btn-secondary {
+  background-color: var(--d-bg-secondary);
+  color: var(--d-text-primary);
+}
+
+.d-btn-accent {
+  background-color: var(--d-accent-yellow);
+  color: var(--d-text-primary);
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .d-interactive,
+  .d-sticker,
+  .d-btn {
+    transition: none;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .d-interactive:focus-visible,
+  .d-btn:focus-visible,
+  .d-focused {
+    outline: 3px solid;
+    outline-offset: 3px;
+  }
+}
