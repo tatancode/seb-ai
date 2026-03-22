@@ -14,10 +14,10 @@
       </div>
 
       <div class="section-card hero__card">
-        <h1>YOUR BUSINESS RUNS ON AI<br/><span class="accent-pink">IN 30 DAYS</span></h1>
+        <h1>AI-POWERED FUNNELS THAT<br/><span class="accent-pink">GROW YOUR REVENUE.</span></h1>
         <p class="hero__sub">
-          We build and deploy custom AI systems — RAG chatbots, lead gen pipelines, content engines,
-          and voice agents — that save your team 20+ hours a week. Live in 30 days. You own everything.
+          We build AI sales funnels, lead gen pipelines, and voice agents that find, qualify,
+          and convert prospects on autopilot. Deployed in 30 days. You own everything.
         </p>
         <div class="hero__actions">
           <DButton variant="accent-pink" size="lg" @click="scrollTo('#contact')">

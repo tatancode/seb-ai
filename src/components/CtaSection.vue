@@ -2,10 +2,10 @@
   <section id="contact" class="cta">
     <div class="section-wrapper">
       <div class="section-card cta__card">
-        <h2>YOUR AI SYSTEM.<br/><span class="accent-pink">LIVE IN 30 DAYS.</span></h2>
+        <h2>MORE REVENUE.<br/><span class="accent-pink">SAME TEAM.</span></h2>
         <p class="cta__sub">
-          Book a free AI Automation Audit. We'll map your highest-ROI automation opportunities
-          and show you exactly what we'd build -- no pitch decks, just a conversation.
+          Book a free Revenue Automation Audit. We'll show you exactly where AI can help your
+          team handle more volume, close more deals, and increase profitability -- no pitch decks, just a conversation.
         </p>
         <form
           class="cta__form"
