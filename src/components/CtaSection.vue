@@ -2,10 +2,10 @@
   <section id="contact" class="cta">
     <div class="section-wrapper">
       <div class="section-card cta__card">
-        <h2>MORE REVENUE.<br/><span class="accent-pink">SAME TEAM.</span></h2>
+        <h2>FOUND REVENUE.<br/><span class="accent-pink">SAME TEAM.</span></h2>
         <p class="cta__sub">
-          Book a free Revenue Automation Audit. We'll show you exactly where AI can help your
-          team handle more volume, close more deals, and increase profitability -- no pitch decks, just a conversation.
+          Book a free Sales System Audit. I'll show you exactly where the revenue leaks are happening
+          and how much money you can recover&mdash;no pitch decks, just a conversation.
         </p>
         <form
           class="cta__form"
@@ -29,14 +29,14 @@
             :loading="submitting"
             :full-width="isMobile"
           >
-            {{ submitted ? 'Sent!' : 'Get in Touch' }}
+            {{ submitted ? 'Sent!' : 'Find My Hidden Revenue' }}
           </DButton>
         </form>
         <p v-if="submitted" class="cta__success">
-          We got it. Expect to hear from us within 24 hours.
+          I got it. Expect to hear from me within 24 hours.
         </p>
         <p v-if="rateLimited" class="cta__rate-limit">
-          You already submitted recently. We're on it.
+          You already submitted recently. I'm on it.
         </p>
       </div>
     </div>

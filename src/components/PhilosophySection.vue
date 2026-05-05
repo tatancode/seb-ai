@@ -2,47 +2,47 @@
   <section id="philosophy" class="philosophy">
     <div class="section-wrapper">
       <div class="section-banner">
-        <h2>INCLUDED WITH EVERY ENGAGEMENT</h2>
+        <h2>AI YOU CAN TRUST WITH YOUR CUSTOMERS</h2>
       </div>
       <div class="section-card philosophy__card">
         <div class="two-col">
           <div class="philosophy__col">
-            <h3>BONUSES</h3>
+            <h3>THE QUALITY GUARANTEE</h3>
+            <p class="philosophy__intro">
+              Most AI bots are "black boxes" that might say the wrong thing. Because of my background in
+              high-stakes systems, I build Safety-First AI.
+            </p>
             <ul>
               <li>
-                <strong>ROI Dashboard</strong>
-                Real-time tracking of hours saved, tickets deflected, and leads generated. You see the math on your investment from week one.
+                <strong>Strict Quality Control</strong>
+                Every automated conversation is monitored by a secondary system to ensure 100% accuracy.
               </li>
               <li>
-                <strong>Hallucination Guardrails</strong>
-                Citation-backed answers, confidence scoring, and automatic human escalation when the AI isn't sure. No fabricated answers reaching your customers.
+                <strong>Brand Protection</strong>
+                Your AI only uses your approved company information. No "hallucinations," no off-script promises.
               </li>
               <li>
-                <strong>Modular Architecture</strong>
-                Swap from OpenAI to Anthropic to open-source next year — no rebuild required. You own the code.
-              </li>
-              <li>
-                <strong>90-Day Maintenance Window</strong>
-                After launch, we monitor and maintain your systems for 90 days. Model updates, API changes, bug fixes — handled.
+                <strong>Performance Tracking</strong>
+                You get a clear dashboard showing exactly how much revenue the system is generating in real-time.
               </li>
             </ul>
           </div>
           <div class="philosophy__col">
-            <h3>OUR GUARANTEE</h3>
+            <h3>I ONLY WIN IF YOU WIN</h3>
             <p>
-              We split every engagement 50/50. You pay half upfront, half on final delivery.
+              <strong>The 50/50 Split.</strong> You pay 50% to start. You don't pay the second half until
+              the system is live and delivering results.
             </p>
             <p>
-              <strong>If by the end of week 2 we haven't delivered a working prototype connected to your
-              real data — something you can see, touch, and test — we refund your deposit in full.</strong>
-              No questions. No friction.
+              <strong>The 14-Day Prototype.</strong> I will have a working version of your sales engine ready
+              for review within two weeks, or I'll refund your deposit immediately. No fluff&mdash;just results.
             </p>
             <p>
-              You're never more than 14 days and half the investment away from a clear go/no-go decision.
               By day 14 you'll have seen your data flowing through a real system, not a slide deck.
+              You're never more than two weeks and half the investment away from a clear go/no-go decision.
             </p>
             <p class="callout">
-              If we can't show tangible progress in two weeks, you shouldn't pay us — and we don't want you to.
+              If I can't show you found revenue in two weeks, you shouldn't pay me&mdash;and I don't want you to.
             </p>
           </div>
         </div>
@@ -82,5 +82,10 @@
 
 .philosophy__col p {
   margin-bottom: 1rem;
+}
+
+.philosophy__intro {
+  margin-bottom: 1.5rem !important;
+  opacity: 0.85;
 }
 </style>
