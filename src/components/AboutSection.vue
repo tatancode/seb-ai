@@ -7,30 +7,30 @@
           <img src="/seb.png" alt="Seb" class="about__avatar-img" />
         </div>
 
-        <h2>BUILT BY SOMEONE WHO SHIPS AI <span class="accent-pink">FOR A LIVING</span></h2>
+        <h2>BUILT BY SOMEONE WHO SHIPS HIGH-STAKES AI <span class="accent-pink">FOR A LIVING</span></h2>
 
         <p>
-          Seb isn't an AI consultant who watched a course and started an agency. He's a software engineer
-          who builds AI systems professionally — every day, for real users, at scale.
+          Seb isn't a consultant who watched a course and started an agency. He's a software engineer who
+          builds AI systems professionally&mdash;every day, for real customers, at scale.
         </p>
 
         <p>
           By day, he builds AI-powered products at one of the largest personal finance brands in the country.
-          His job is making AI answer real questions from real data without making things up.
-          The same systems he builds at work are the ones he builds for clients.
+          His job is making AI give the right answer, every time, without ever making things up. That's the
+          same standard your sales engine will be built to.
         </p>
 
         <p>
           A decade of building software. Started in web development, moved into enterprise engineering,
-          then quality engineering, then into building AI products from the ground up.
-          Before tech, he worked in sales — so he thinks about <strong>revenue and outcomes</strong>, not just features.
+          then quality engineering, then into shipping AI products from the ground up. Before tech, he
+          worked in sales&mdash;so he thinks about <strong>revenue and outcomes</strong>, not just features.
         </p>
 
         <div class="about__highlight">
           <p>
             <strong>What that means for you:</strong> The person building your system does this at a company
-            that serves millions of users. Your system gets built with the same rigor as enterprise software,
-            not a weekend prototype.
+            that serves millions of users where a wrong answer costs real money. Your sales engine gets built
+            with the same rigor&mdash;not a weekend prototype.
           </p>
         </div>
 

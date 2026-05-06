@@ -4,11 +4,11 @@
       <a href="#" class="navbar__logo">Seb AI</a>
       <div class="navbar__links" :class="{ 'navbar__links--open': menuOpen }">
         <a href="#services" @click="menuOpen = false">Services</a>
-        <a href="#philosophy" @click="menuOpen = false">Philosophy</a>
+        <a href="#philosophy" @click="menuOpen = false">Guarantee</a>
         <a href="#contact" @click="menuOpen = false">Contact</a>
       </div>
       <DButton variant="accent-pink" size="sm" class="navbar__cta" @click="scrollTo('#contact')">
-        Get Started
+        Find My Revenue
       </DButton>
       <button class="navbar__hamburger" @click="menuOpen = !menuOpen" aria-label="Toggle menu">
         <span :class="{ 'open': menuOpen }"></span>

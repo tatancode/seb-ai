@@ -3,14 +3,15 @@
     <div class="section-wrapper">
 
       <div class="section-card hero__card">
-        <h1>AI-POWERED<br/><span class="accent-pink">REVENUE GROWTH</span></h1>
+        <h1>STOP LETTING YOUR<br/>HARD-EARNED LEADS<br/><span class="accent-pink">GO TO WASTE.</span></h1>
         <p class="hero__sub">
-          We build AI sales funnels, lead gen pipelines, and voice agents that find, qualify,
-          and convert prospects on autopilot. Deployed in 30 days. You own everything.
+          Most businesses lose up to 40% of their sales to slow follow-ups and "lost" leads sitting in their CRM.
+          I build AI Sales Engines that capture that missing revenue&mdash;protected by strict quality-control
+          systems so your brand is always safe.
         </p>
         <div class="hero__actions">
           <DButton variant="accent-pink" size="lg" @click="scrollTo('#contact')">
-            Book a Call
+            Find My Hidden Revenue
           </DButton>
           <DButton variant="secondary" size="lg" @click="scrollTo('#what')">
             Learn More

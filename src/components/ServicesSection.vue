@@ -2,7 +2,7 @@
   <section id="services" class="services">
     <div class="section-wrapper">
       <div class="section-banner">
-        <h2>WHAT YOU GET</h2>
+        <h2>THE SERVICES</h2>
       </div>
       <div class="section-card services__card">
         <div class="services__grid">
@@ -26,31 +26,24 @@
 <script setup lang="ts">
 const services = [
   {
-    title: 'AI Automation Audit',
-    label: 'WEEK 0',
-    description: '90-minute deep dive mapping your highest-cost repetitive processes to automation opportunities, ranked by ROI. You walk away with a prioritized roadmap even if you never hire us.',
-    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><rect x="6" y="4" width="28" height="32" rx="3" stroke="#000" stroke-width="2" fill="#FFF455"/><line x1="12" y1="12" x2="28" y2="12" stroke="#000" stroke-width="1.5"/><line x1="12" y1="18" x2="28" y2="18" stroke="#000" stroke-width="1.5"/><line x1="12" y1="24" x2="22" y2="24" stroke="#000" stroke-width="1.5"/><path d="M12 30 L16 26 L20 30" stroke="#000" stroke-width="1.5" fill="none"/></svg>',
-    highlight: false,
-  },
-  {
-    title: 'Custom AI System Build',
-    label: 'WEEKS 1-3',
-    description: 'We build and deploy your chosen system — RAG chatbot, lead gen pipeline, content engine, or voice agent — production-ready, integrated with your tools, running on your infrastructure.',
-    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><circle cx="20" cy="20" r="14" stroke="#000" stroke-width="2" fill="#FF004D"/><circle cx="20" cy="20" r="9" stroke="#000" stroke-width="1.5" fill="none"/><circle cx="20" cy="20" r="4" stroke="#000" stroke-width="1.5" fill="#fff"/><line x1="28" y1="12" x2="34" y2="6" stroke="#000" stroke-width="2"/><polygon points="34,6 34,11 29,6" fill="#000"/></svg>',
+    title: 'Instant-Response Engines',
+    label: 'CAPTURE NEW LEADS',
+    description: 'Turn web inquiries into booked appointments in under 60 seconds, 24 hours a day. Beat your competitors to every lead, every time.',
+    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><circle cx="20" cy="20" r="16" stroke="#000" stroke-width="2" fill="#FFF455"/><path d="M20 10 V20 L26 24" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 6 L34 10" stroke="#000" stroke-width="2" stroke-linecap="round"/><path d="M10 6 L6 10" stroke="#000" stroke-width="2" stroke-linecap="round"/></svg>',
     highlight: true,
   },
   {
-    title: 'Data Integration + RAG Pipeline',
-    label: 'WEEK 1',
-    description: 'We connect your scattered data sources — docs, CRM, helpdesk, wiki — into a clean, queryable pipeline. This is the foundation everything else runs on.',
-    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><path d="M8 36V4h18l6 6v26H8z" stroke="#000" stroke-width="2" fill="#fff"/><polyline points="26,4 26,10 32,10" stroke="#000" stroke-width="1.5" fill="none"/><line x1="14" y1="18" x2="28" y2="18" stroke="#000" stroke-width="1.5"/><line x1="14" y1="24" x2="28" y2="24" stroke="#000" stroke-width="1.5"/><line x1="14" y1="30" x2="22" y2="30" stroke="#000" stroke-width="1.5"/><path d="M30 28 L36 22 L38 24 L32 30 Z" stroke="#000" stroke-width="1.5" fill="#FFF455"/></svg>',
+    title: 'Old-Lead Reactivation',
+    label: 'RECOVER LOST REVENUE',
+    description: 'Turn your "dead" CRM database into a fresh stream of sales calls without lifting a finger. Re-engage thousands of past leads at machine speed.',
+    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><ellipse cx="20" cy="10" rx="14" ry="5" stroke="#000" stroke-width="2" fill="#FF004D"/><path d="M6 10 V30 C6 32.8 12.3 35 20 35 C27.7 35 34 32.8 34 30 V10" stroke="#000" stroke-width="2" fill="#FF004D"/><path d="M6 20 C6 22.8 12.3 25 20 25 C27.7 25 34 22.8 34 20" stroke="#000" stroke-width="2" fill="none"/><path d="M26 30 L30 26 M30 30 L26 26" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>',
     highlight: false,
   },
   {
-    title: 'Adoption Sprint + Team Training',
-    label: 'WEEK 4',
-    description: 'Live training sessions for your team. Custom adoption playbook. Usage tracking dashboards. We don\'t leave until your people are actually using the system daily.',
-    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><circle cx="20" cy="16" r="10" stroke="#000" stroke-width="2" fill="#FFF455"/><circle cx="16" cy="14" r="2" fill="#000"/><circle cx="24" cy="14" r="2" fill="#000"/><path d="M15 20 Q20 24 25 20" stroke="#000" stroke-width="1.5" fill="none"/><path d="M10 30 Q10 36 16 36 L24 36 Q30 36 30 30" stroke="#000" stroke-width="2" fill="none"/><line x1="20" y1="26" x2="20" y2="30" stroke="#000" stroke-width="2"/></svg>',
+    title: 'Sales System Audit',
+    label: 'FIND THE LEAKS',
+    description: 'I\'ll analyze your current process and show you exactly where the revenue leaks are happening. You walk away with a prioritized fix list, even if you never hire me.',
+    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><circle cx="17" cy="17" r="11" stroke="#000" stroke-width="2" fill="#fff"/><line x1="25" y1="25" x2="34" y2="34" stroke="#000" stroke-width="3" stroke-linecap="round"/><line x1="12" y1="17" x2="22" y2="17" stroke="#000" stroke-width="1.5"/><line x1="17" y1="12" x2="17" y2="22" stroke="#000" stroke-width="1.5"/></svg>',
     highlight: false,
   },
 ]
@@ -65,7 +58,7 @@ const services = [
 
 .services__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -113,7 +106,7 @@ const services = [
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .services__grid {
     grid-template-columns: 1fr;
   }
