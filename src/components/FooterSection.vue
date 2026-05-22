@@ -6,7 +6,7 @@
         <span class="footer__tagline">Booked roof inspections. Exclusive to you. In under 45 seconds.</span>
       </div>
       <span class="footer__copy">
-        &copy; 2026 Ramsey AI. The Booked Roof Engine is a service of Ramsey AI.
+        &copy; 2026 Booked Roof Engine. All rights reserved.
       </span>
     </div>
   </footer>

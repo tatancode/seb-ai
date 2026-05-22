@@ -1,10 +1,10 @@
 # OFFER.md
-*Phase 1 Grand-Slam Offer for Ramsey AI — Solo Roofers Edition*
+*Phase 1 Grand-Slam Offer for The Booked Roof Engine — Solo Roofers Edition*
 
 ---
 
 ## 1. Business Snapshot
-- **Business:** Ramsey AI — productized lead-generation agency for non-technical local service businesses
+- **Business:** Productized lead-generation agency for non-technical local service businesses (Phase 1 vertical: roofing)
 - **Selling:** A done-for-you system that turns Meta ads into booked roof-inspection appointments on the owner's calendar, with a 45-second response time
 - **Current stage:** Phase 1 of the $100k/month blueprint — building 3 case studies before charging
 - **Main channel:** Outbound DM + Loom audits → free 30-day pilots → paid retainers
@@ -159,7 +159,7 @@ Each item priced at what an independent specialist would charge a roofer for the
 | **TOTAL STACKED VALUE** | **~$15,000+ in setup and first 3 months** |
 
 **Price hypothesis (feeding into `pricing-strategy`):**
-- Pilot (first 3 clients): **$0 to Ramsey AI + $500 client-funded ad spend**, in exchange for video testimonial + case study rights
+- Pilot (first 3 clients): **$0 retainer + $500 client-funded ad spend**, in exchange for video testimonial + case study rights
 - Post-pilot retainer: **$1,500 – $3,500/month + ad spend pass-through** (3-tier structure — see Section 13)
 - Optional performance bonus: **$200–$500 per booked-and-showed inspection above baseline** (aligns incentives, makes ROI math obvious)
 
@@ -297,6 +297,6 @@ Lead with **risk-reversal** (free pilot) for the first 3, then **performance gua
 ## TL;DR
 - **Offer name:** The Booked Roof Engine
 - **Promise:** 10+ exclusive roof inspections booked on your calendar each month, with a 45-second response — or we work free until it works
-- **Pilot:** First 3 in metro, $0 to Ramsey AI, client funds $500 ad spend, trade for testimonial
+- **Pilot:** First 3 in metro, $0 retainer, client funds $500 ad spend, trade for testimonial
 - **Post-pilot:** $1,500–$3,500/mo + ad spend, 3 tiers, performance-bonus add-on (details locked in `pricing-strategy`)
 - **Killer line:** *"You're a roofer, not a marketer. Stop trying to be one."*

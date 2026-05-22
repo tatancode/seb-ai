@@ -1,5 +1,5 @@
 # PRICING.md
-*Pricing strategy for The Booked Roof Engine — Phase 1 of Ramsey AI*
+*Pricing strategy for The Booked Roof Engine — Phase 1*
 
 ---
 

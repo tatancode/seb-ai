@@ -21,7 +21,6 @@
 ## NavbarSection
 
 **Logo / Brand:** Booked Roof Engine
-*(small "by Ramsey AI" tagline optional)*
 
 **Nav links (anchor links, single page):**
 - How It Works
@@ -294,7 +293,7 @@ A: No. The $500 goes directly to Meta (Facebook) via your own ad account. We nev
 - **Legal** — Privacy / Terms
 
 **Bottom strip:**
-*© 2026 Ramsey AI. The Booked Roof Engine is a service of Ramsey AI.*
+*© 2026 Booked Roof Engine. All rights reserved.*
 
 ---
 
@@ -334,6 +333,6 @@ Would Mike-the-Tulsa-roofer-on-his-truck-during-lunch say *"yeah, that's me"* or
 - All section H1/H2/H3 in Archivo Black, body in Inter
 - Form submission hits the existing Formspree endpoint (`xkoqlwev`) — add a hidden field `offer: "booked-roof-engine"` to filter from any prior submissions
 - 60-second rate-limit cooldown on form (already in `CtaSection.vue`) — keep it
-- Replace any references to "Ramsey AI" as primary brand → "Booked Roof Engine"; "Ramsey AI" survives as tiny attribution in footer
+- Primary brand is "Booked Roof Engine"; no parent-brand attribution needed
 - Mobile breakpoint at 768px (already set) — testimonial cards stack, value stack stacks, comparison cards stack
 - Smooth scroll for nav anchor links

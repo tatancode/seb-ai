@@ -1,5 +1,5 @@
 # MARKET_RESEARCH.md
-*Phase 1 niche selection for Ramsey AI — productized lead-gen agency*
+*Phase 1 niche selection for The Booked Roof Engine — productized lead-gen agency*
 
 ---
 
