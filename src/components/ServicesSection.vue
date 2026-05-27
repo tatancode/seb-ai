@@ -2,20 +2,48 @@
   <section id="services" class="services">
     <div class="section-wrapper">
       <div class="section-banner">
-        <h2>THE SERVICES</h2>
+        <h2>THE BOOKED ROOF ENGINE</h2>
       </div>
       <div class="section-card services__card">
+        <p class="services__intro">
+          A complete, done-for-you system that turns your zip code into a stream of booked roof inspections.
+          Here's how it works:
+        </p>
+
+        <!-- How It Works: 4 steps -->
+        <div class="services__steps">
+          <div v-for="(step, idx) in steps" :key="step.title" class="services__step">
+            <div class="services__step-num">{{ idx + 1 }}</div>
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.description }}</p>
+          </div>
+        </div>
+
+        <!-- Value Stack -->
+        <div class="services__stack-header">
+          <h3>Everything You Get When You Sign Up</h3>
+        </div>
         <div class="services__grid">
           <div
-            v-for="service in services"
-            :key="service.title"
+            v-for="item in stack"
+            :key="item.title"
             class="services__item"
-            :class="service.highlight ? 'services__item--highlight' : ''"
           >
-            <div class="services__icon" v-html="service.icon"></div>
-            <span v-if="service.label" class="services__label">{{ service.label }}</span>
-            <h3>{{ service.title }}</h3>
-            <p>{{ service.description }}</p>
+            <div class="services__check">✓</div>
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+
+        <!-- Bonuses -->
+        <div class="services__bonuses">
+          <h3>Plus 3 Bonuses</h3>
+          <div class="services__bonus-grid">
+            <div v-for="bonus in bonuses" :key="bonus.title" class="services__bonus">
+              <span class="services__bonus-tag">BONUS</span>
+              <h4>{{ bonus.title }}</h4>
+              <p>{{ bonus.description }}</p>
+            </div>
           </div>
         </div>
       </div>
@@ -24,27 +52,76 @@
 </template>
 
 <script setup lang="ts">
-const services = [
+const steps = [
   {
-    title: 'Instant-Response Engines',
-    label: 'CAPTURE NEW LEADS',
-    description: 'Turn web inquiries into booked appointments in under 60 seconds, 24 hours a day. Beat your competitors to every lead, every time.',
-    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><circle cx="20" cy="20" r="16" stroke="#000" stroke-width="2" fill="#FFF455"/><path d="M20 10 V20 L26 24" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 6 L34 10" stroke="#000" stroke-width="2" stroke-linecap="round"/><path d="M10 6 L6 10" stroke="#000" stroke-width="2" stroke-linecap="round"/></svg>',
-    highlight: true,
+    title: 'We Run The Ads',
+    description: 'A pre-tested ad library to homeowners in your service area. Storm-damage angles. Aged-roof angles. Whatever fits your market that week.',
   },
   {
-    title: 'Old-Lead Reactivation',
-    label: 'RECOVER LOST REVENUE',
-    description: 'Turn your "dead" CRM database into a fresh stream of sales calls without lifting a finger. Re-engage thousands of past leads at machine speed.',
-    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><ellipse cx="20" cy="10" rx="14" ry="5" stroke="#000" stroke-width="2" fill="#FF004D"/><path d="M6 10 V30 C6 32.8 12.3 35 20 35 C27.7 35 34 32.8 34 30 V10" stroke="#000" stroke-width="2" fill="#FF004D"/><path d="M6 20 C6 22.8 12.3 25 20 25 C27.7 25 34 22.8 34 20" stroke="#000" stroke-width="2" fill="none"/><path d="M26 30 L30 26 M30 30 L26 26" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>',
-    highlight: false,
+    title: 'They Land On Your Page',
+    description: 'A clean, mobile-first page with your name, your photo, and your license number. Not ours. Not Angi\'s. Yours.',
   },
   {
-    title: 'Sales System Audit',
-    label: 'FIND THE LEAKS',
-    description: 'I\'ll analyze your current process and show you exactly where the revenue leaks are happening. You walk away with a prioritized fix list, even if you never hire me.',
-    icon: '<svg viewBox="0 0 40 40" width="40" height="40" fill="none"><circle cx="17" cy="17" r="11" stroke="#000" stroke-width="2" fill="#fff"/><line x1="25" y1="25" x2="34" y2="34" stroke="#000" stroke-width="3" stroke-linecap="round"/><line x1="12" y1="17" x2="22" y2="17" stroke="#000" stroke-width="1.5"/><line x1="17" y1="12" x2="17" y2="22" stroke="#000" stroke-width="1.5"/></svg>',
-    highlight: false,
+    title: 'We Text Them In 45 Seconds',
+    description: 'The moment they submit, our system texts them within 45 seconds. Asks 3 qualifying questions. Confirms they own the home and it\'s in your area.',
+  },
+  {
+    title: 'They Book Themselves',
+    description: 'Qualified leads pick a time slot. It drops straight onto your calendar. Your phone buzzes with the address. You show up to the roof.',
+  },
+]
+
+const stack = [
+  {
+    title: 'Storm & Aged-Roof Ad Library',
+    description: '3 pre-tested ad creatives in your service area, refreshed monthly. No more guessing what to run.',
+  },
+  {
+    title: 'Branded Lead-Capture Page',
+    description: 'Mobile-first, single purpose: turn clicks into booked inspections. Your name. Your photo. Your license.',
+  },
+  {
+    title: '45-Second Text Responder',
+    description: 'Every lead gets a personal text within 45 seconds. 24 hours. 7 days. Including 11pm Saturday.',
+  },
+  {
+    title: '3-Question Qualifier',
+    description: 'Filters out renters, tire-kickers, and out-of-area requests before they hit your calendar.',
+  },
+  {
+    title: 'Direct Calendar Booking',
+    description: 'Qualified leads pick a time slot. Drops straight onto your phone\'s calendar.',
+  },
+  {
+    title: 'Owner Mobile Alerts',
+    description: 'Every booked inspection pings your phone with the address and the issue.',
+  },
+  {
+    title: 'Storm-Trigger Ad Boost',
+    description: 'When NOAA reports hail or wind in your area, our system auto-launches storm-damage ads within 24 hours.',
+  },
+  {
+    title: 'Weekly Plain-English Report',
+    description: '"This week you got 7 inspections booked, 6 showed up." No jargon. No dashboards you\'ll never log into.',
+  },
+  {
+    title: 'Monthly Strategy Call',
+    description: '30 minutes with us. What\'s working, what to change, what\'s next.',
+  },
+]
+
+const bonuses = [
+  {
+    title: 'After-Hours Auto-Responder',
+    description: 'The lead who fills out the form at 9pm Saturday gets the same 45-second response as the one who fills it out Tuesday at noon.',
+  },
+  {
+    title: 'Inspection-to-Close Playbook',
+    description: 'The 5-message follow-up sequence and 3 voicemails that get callbacks. So a qualified inspection actually becomes a closed roof.',
+  },
+  {
+    title: 'Geographic Exclusivity',
+    description: 'One roofer per metro. Once you\'re in, your competition is locked out.',
   },
 ]
 </script>
@@ -56,57 +133,183 @@ const services = [
   border-top: none;
 }
 
-.services__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+.services__intro {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  opacity: 0.85;
 }
 
-.services__item {
-  padding: 2rem;
+/* How It Works */
+.services__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.services__step {
+  padding: 1.75rem 1.5rem;
   border: var(--d-border-width-thick) solid var(--d-border);
   border-radius: var(--d-radius-md);
   box-shadow: var(--d-shadow-sm);
   background: var(--d-bg-secondary);
-  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
+  position: relative;
 }
 
-.services__item:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--d-shadow-md);
-}
-
-.services__item--highlight {
-  background: var(--d-accent-yellow);
-}
-
-.services__label {
-  display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  padding: 0.2rem 0.6rem;
-  border: 2px solid var(--d-border);
-  border-radius: var(--d-radius-sm);
-  margin-bottom: 0.5rem;
-  background: var(--d-bg-primary);
-}
-
-.services__icon {
+.services__step-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--d-accent-pink);
+  color: var(--d-bg-secondary);
+  border: var(--d-border-width-thick) solid var(--d-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
   margin-bottom: 1rem;
+  box-shadow: var(--d-shadow-sm);
 }
 
-.services__item h3 {
+.services__step h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.services__step p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.55;
+}
+
+/* Value Stack */
+.services__stack-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  border-top: var(--d-border-width-thick) dashed var(--d-border);
+}
+
+.services__stack-header h3 {
+  font-size: 1.75rem;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.services__item {
+  padding: 1.5rem;
+  border: var(--d-border-width-thick) solid var(--d-border);
+  border-radius: var(--d-radius-md);
+  box-shadow: var(--d-shadow-sm);
+  background: var(--d-bg-secondary);
+}
+
+.services__check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--d-accent-yellow);
+  border: 2px solid var(--d-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.1rem;
   margin-bottom: 0.75rem;
 }
 
+.services__item h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
 .services__item p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   opacity: 0.85;
-  line-height: 1.6;
+  line-height: 1.55;
+}
+
+/* Bonuses */
+.services__bonuses {
+  margin-top: 4rem;
+  padding: 2.5rem;
+  background: var(--d-accent-yellow);
+  border: var(--d-border-width-thick) solid var(--d-border);
+  border-radius: var(--d-radius-md);
+  box-shadow: var(--d-shadow-md);
+}
+
+.services__bonuses > h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+}
+
+.services__bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.services__bonus {
+  padding: 1.5rem;
+  background: var(--d-bg-secondary);
+  border: var(--d-border-width-thick) solid var(--d-border);
+  border-radius: var(--d-radius-md);
+  box-shadow: var(--d-shadow-sm);
+}
+
+.services__bonus-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.6rem;
+  background: var(--d-accent-pink);
+  color: var(--d-bg-secondary);
+  border: 2px solid var(--d-border);
+  border-radius: var(--d-radius-sm);
+  margin-bottom: 0.75rem;
+}
+
+.services__bonus h4 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.services__bonus p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.55;
 }
 
 @media (max-width: 1024px) {
+  .services__steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services__bonus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .services__steps {
+    grid-template-columns: 1fr;
+  }
   .services__grid {
     grid-template-columns: 1fr;
   }

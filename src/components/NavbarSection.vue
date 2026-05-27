@@ -1,14 +1,15 @@
 <template>
   <nav class="navbar">
     <div class="navbar__inner">
-      <a href="#" class="navbar__logo">Seb AI</a>
+      <a href="#" class="navbar__logo">Booked Roof</a>
       <div class="navbar__links" :class="{ 'navbar__links--open': menuOpen }">
-        <a href="#services" @click="menuOpen = false">Services</a>
-        <a href="#philosophy" @click="menuOpen = false">Guarantee</a>
-        <a href="#contact" @click="menuOpen = false">Contact</a>
+        <a href="#what" @click="menuOpen = false">The Problem</a>
+        <a href="#services" @click="menuOpen = false">How It Works</a>
+        <a href="#philosophy" @click="menuOpen = false">Why It Works</a>
+        <a href="#contact" @click="menuOpen = false">Apply</a>
       </div>
       <DButton variant="accent-pink" size="sm" class="navbar__cta" @click="scrollTo('#contact')">
-        Find My Revenue
+        Apply For Pilot
       </DButton>
       <button class="navbar__hamburger" @click="menuOpen = !menuOpen" aria-label="Toggle menu">
         <span :class="{ 'open': menuOpen }"></span>
